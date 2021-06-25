@@ -16,8 +16,6 @@ This is my solution to the [Huddle landing page with single introductory section
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -39,6 +37,10 @@ A screenshot of my solution.
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+- Starting off with the HTML. Building the skeleton of the page first. Making sure everything is semantic. Using the reference photos as a guide.
+- Found some free icons to use for the social media links via [bootstrap](https://icons.getbootstrap.com/).
+- 
 
 ### Built with
 
