@@ -1,0 +1,81 @@
+/* mobile viewport */
+@media (min-width: 200px) and (max-width: 500px) {
+  html,body{
+    background: blueviolet url(/images/bg-mobile.svg) no-repeat right top;
+    color: #e6e7e8;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    height: 2rem;
+    margin: 3rem;
+  }
+
+  .mockup{
+    height: 200px;
+    margin: auto;
+  }
+  h2, p{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  h2{
+    font-family: 'Poppins';
+    margin: 4rem auto 1rem;
+  }
+  p{
+    font-family: 'Open Sans';
+  }
+  button{
+    margin: 2rem auto;
+    width: 50%;
+    padding: .7rem;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    border: none;
+    background-color: #e6e7e8;
+    color: blueviolet;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .6);
+    transition: .3s;
+  }
+  button:hover{
+    color: #e6e7e8;
+    background-color: #FF52C1;
+  }
+  .socials{
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
+    margin: auto;
+    padding: 3rem;
+  }
+  i{
+    border: 2px solid #e6e7e8;
+    border-radius: 50%;
+    padding: .5rem;
+    color: #e6e7e8;
+    transition: .3s;
+  }
+  i:hover{
+    border-color: #FF52C1;
+    color: #FF52C1;
+  }
+
+  .about{
+    background-color: #1c1c1c;
+    color: #e6e7e8;
+    padding: 1rem;
+  }
+  a{
+    color: #e6e7e8;
+    text-decoration: none;
+    transition: .3s;
+  }
+  a:hover{
+    color: #e4d00a;
+  }
+}
