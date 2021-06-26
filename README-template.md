@@ -49,7 +49,7 @@ Day 2 - 6/26/2021
 - Today I'm going to start and finish the css for the desktop view. I'm moving the html,body, main, h2, p, button, icon, and about/attribution css styles outside of the media queries because it makes sense. The only thing that should be inside the media queries is css specifically for that targeted viewport. So the mobile background SVG and desktop background SVG should be in the mobile and desktop media queries respectively.
 - In the main section, I moved the illustration and text + button in their respective divs since I'm using flexbox.
 - I finished the desktop css. Now I'm focusing on responsiveness. Making sure the imgs and text shrinks when I resize my window.
-- I'm creating a gh-pages branch so I can check the responsiveness using [browserstack](https://www.browserstack.com/).
+- I'm creating a gh-pages branch so I can check the responsiveness using [this responsive design checker](https://responsivedesignchecker.com/).
 
 ### Built with
 
