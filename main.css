@@ -1,0 +1,129 @@
+html,body{
+  background: blueviolet url(/images/bg-desktop.svg) no-repeat;
+  color: #e6e7e8;
+}
+main{
+  display: flex;
+  max-width: 85%;
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+h2{
+  font-family: 'Poppins';
+}
+p{
+  font-family: 'Open Sans';
+}
+
+button{
+  margin: 2rem auto;
+  width: 50%;
+  padding: .7rem;
+  border-radius: 50px;
+  font-family: 'Open Sans';
+  border: none;
+  background-color: #e6e7e8;
+  color: blueviolet;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .6);
+  transition: .3s;
+}
+button:hover{
+  color: #e6e7e8;
+  background-color: #FF52C1;
+}
+
+i{
+  border: 2px solid #e6e7e8;
+  border-radius: 50%;
+  padding: .5rem;
+  color: #e6e7e8;
+  transition: .3s;
+}
+i:hover{
+  border-color: #FF52C1;
+  color: #FF52C1;
+}
+
+/* desktop viewport */
+@media (min-width: 900px){
+  .logo{
+    padding: 2rem 2rem 0;
+  }
+  .illustration{
+    width: 60vw;
+    margin-right: 1rem;
+  }
+  .text{
+    width: 40vw;
+    padding: 3rem;
+  }
+  .text p{
+    margin: 1.5rem 0;
+  }
+  button{
+    margin: auto;
+  }
+  .socials{
+    margin: 2.5rem;
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+/* mobile viewport */
+@media (min-width: 200px) and (max-width: 500px) {
+  html,body{background-image: url(/images/bg-mobile.svg);}
+  main{
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    margin: 2rem auto;
+    width: 50%;
+  }
+  .logo{
+    height: 2rem;
+    margin: 2rem;
+  }
+  .mockup{
+    height: 200px;
+    margin: auto;
+  }
+  h2, p{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  h2{
+    margin: 4rem auto 1rem;
+  }
+  .socials{
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
+    margin: auto;
+    padding: 3rem;
+  }
+}
+
+.about{
+  background-color: #1c1c1c;
+  color: #e6e7e8;
+  padding: .5rem;
+  text-align: center;
+  font-size: x-small;
+}
+a{
+  color: #e6e7e8;
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover{
+  color: #e4d00a;
+}
