@@ -1,5 +1,5 @@
 html,body{
-  background: blueviolet url(/images/bg-desktop.svg) no-repeat;
+  background: blueviolet url(images/bg-desktop.svg) no-repeat;
   color: #e6e7e8;
 }
 main{
@@ -74,7 +74,7 @@ i:hover{
 
 /* mobile viewport */
 @media (min-width: 200px) and (max-width: 500px) {
-  html,body{background-image: url(/images/bg-mobile.svg);}
+  html,body{background-image: url(images/bg-mobile.svg);}
   main{
     flex-direction: column;
     max-width: 100%;
