@@ -58,12 +58,13 @@ Day 2 - 6/26/2021
 - I changed it from div to a but that didn't change anything except a curser change...
 - Just out of curiosity, I put the font awesome icon class and applied it to an link and now the color changes on hover but the icon isn't centered!! My brain hurts...
 - I looked in the chrome dev tools and noticed that display: flex was being overwritten by something so I searched in the computed tab to find what was overriding my flex. The fab class. So I applied an !important to my flex and it fixed my problem!
+- Now I'm focusing on responsiveness. I found the break point for the tablet viewport by using chrome's device toolbar. The background image wasn't properly sized so I fixed that first. The tablet design will be the same layout as desktop, just smaller.
+- I checked responsiveness with chrome device toolbar and everything looks good! I'm finished!!
 
 ### Built with
 
 - Semantic HTML5 markup
 - Flexbox
-- Mobile-first workflow
 
 ### What I learned
 

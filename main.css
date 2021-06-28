@@ -1,5 +1,7 @@
-html,body{
+html{
   background: blueviolet url(images/bg-desktop.svg) no-repeat;
+  background-position: top center;
+  background-size: contain;
   color: #e6e7e8;
 }
 main{
@@ -9,16 +11,16 @@ main{
   padding: 2rem;
   padding-bottom: 0;
 }
-
 h2{
   font-family: 'Poppins';
+  font-size: 2vw;
 }
 p{
+  margin: 1.5rem 0;
   font-family: 'Open Sans';
+  font-size: 1.2vw;
 }
-a{
-  text-decoration: none;
-}
+a{text-decoration: none;}
 
 button{
   margin: 2rem auto;
@@ -36,7 +38,13 @@ button:hover{
   color: #e6e7e8;
   background-color: #FF52C1;
 }
-
+.socials{
+  display: flex;
+  justify-content: flex-end;
+  margin: 2.5rem;
+  margin-top: 0;
+  text-align: right;
+}
 .iconBorder{
   display: flex !important;
   align-items: center;
@@ -54,12 +62,9 @@ a:hover{
   color: #FF52C1;
   border-color: #FF52C1;
 }
-
 /* desktop viewport */
-@media (min-width: 900px){
-  .logo{
-    padding: 2rem 2rem 0;
-  }
+@media (min-width: 936px){
+  .logo{padding: 2rem 2rem 0;}
   .illustration{
     width: 60vw;
     margin-right: 1rem;
@@ -68,24 +73,37 @@ a:hover{
     width: 40vw;
     padding: 3rem;
   }
-  .text p{
-    margin: 1.5rem 0;
-  }
-  button{
-    margin: auto;
-  }
-  .socials{
-    display: flex;
-    justify-content: flex-end;
-    margin: 2.5rem;
-    margin-top: 0;
-    text-align: right;
-  }
+  button{margin: auto;}
 }
+/* tablet viewport */
+@media (min-width: 546px) and (max-width: 935px){
+  html{background-size: cover;}
+  .logo{
+    padding: 1rem 1rem 0;
+    height: 13vh;
+  }
+  .illustration{
+    width: 50vw;
+    margin-right: 1rem;
+  }
+  .text{
+    width: 50vw;
+    padding: 1rem;
+  }
+  h2{font-size: 2.7vw;}
+  p{
+    margin: 1.5rem 0;
+    font-size: 1.8vw;
+  }
+  button{margin: .5rem 0;}
 
+}
 /* mobile viewport */
-@media (min-width: 200px) and (max-width: 500px) {
-  html,body{background-image: url(images/bg-mobile.svg);}
+@media (min-width: 200px) and (max-width: 545px){
+  html{
+    background-image: url(images/bg-mobile.svg);
+    background-position: top center;
+  }
   main{
     flex-direction: column;
     max-width: 100%;
@@ -95,31 +113,35 @@ a:hover{
     flex-direction: column;
   }
   button{
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     width: 50%;
   }
   .logo{
-    height: 2rem;
-    margin: 2rem;
+    height: 1.5rem;
+    margin: 1.5rem;
   }
   .mockup{
-    height: 200px;
+    width: 50vw;
     margin: auto;
   }
   h2, p{
     text-align: center;
-    width: 70%;
     margin: auto;
   }
   h2{
-    margin: 4rem auto 1rem;
+    font-size: 6vw;
+    margin: 1rem;
+  }
+  p{
+    font-size: 4vw;
+    margin: 0 2rem;
   }
   .socials{
     display: flex;
     justify-content: space-around;
-    width: 280px;
+    width: 50%;
     margin: auto;
-    padding: 3rem;
+    padding: 1rem;
   }
 }
 
@@ -130,10 +152,12 @@ a:hover{
   text-align: center;
   font-size: x-small;
 }
+.about p{
+  margin: .5rem;
+  font-size: xx-small;
+}
 p a{
   color: #e6e7e8;
   transition: .3s;
 }
-p a:hover{
-  color: #e4d00a;
-}
+p a:hover{color: #e4d00a;}
