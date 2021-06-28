@@ -51,6 +51,13 @@ Day 2 - 6/26/2021
 - I finished the desktop css. Now I'm focusing on responsiveness. Making sure the imgs and text shrinks when I resize my window.
 - I'm creating a gh-pages branch so I can check the responsiveness using [this responsive design checker](https://responsivedesignchecker.com/).
 - Removed the "\" so my images can show up on gh-pages
+- It worked! Images now work on gh-pages!!
+- Next I want to work on the font awesome facebook icon border. It's not a perfect circle like the others. I think I just have to surround them in individual div's and give the div a round border. I'm going to try that.
+- After applying the border div to each social icon, I noticed that the w & h are all different. So in order for all of them to be completely round, they need to be the same height and width.
+- Now the social icons have perfectly round borders! And are aligned correctly on desktop & mobile viewport's. But now when you hover over the icon, the icon color will transition but not the border. Maybe I should wrap everything around a link instead of a div.
+- I changed it from div to a but that didn't change anything except a curser change...
+- Just out of curiosity, I put the font awesome icon class and applied it to an link and now the color changes on hover but the icon isn't centered!! My brain hurts...
+- I looked in the chrome dev tools and noticed that display: flex was being overwritten by something so I searched in the computed tab to find what was overriding my flex. The fab class. So I applied an !important to my flex and it fixed my problem!
 
 ### Built with
 
